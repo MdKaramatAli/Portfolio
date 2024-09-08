@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* per loader */
+.loader_box{
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loader {
+    width: .3rem;
+    height: 2rem;
+    border-radius: 3rem;
+    background-color: Aqua;
+}
+.A{
+    animation: load linear infinite .5s ;
+}
+.B{
+    animation: load  linear infinite .7s;
+}
+.C{
+    animation: load  linear infinite  .9s ;
+}
+.D{
+    animation: load  linear infinite 1.2s;
+}
+@keyframes load {
+    0%{
+        transform: scaleY(0);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scale(.1);
+    }
+}
+
+/* Animation for Photo   (HOME) */
+.main_container_photo{
+    animation:moving 5s infinite linear;
+}
+@keyframes moving {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(1rem);
+    }
+    50%{
+        transform: translateY(0rem);
+    }
+    75%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+
+/* Main  */
+.main{
+    display: none;
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* gear */
+.fa-gear{
+    color: #000;
+    animation: rotate 2s linear infinite ;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(1turn);
+    }
+}
+.color_selector{
+    width: 180px;
+    height: auto;
+    background-color: #fff;
+    padding:  0rem 1rem;
+    position: fixed;
+    top: 28%;
+    left: 0%;
+    display: none;
+}
+.color_selector p{
+    color: #000;
+    font-size: 1.1rem;
+    padding: .8rem 0;
+}
+
+.color_selector i
+{
+    font-size: 1.7rem;
+    padding: 0 .8rem .5rem 0;
+    cursor: pointer;
+}
+#cross{
+    color: black;
+    padding: .3rem;
+    font-size: 1.2rem;
+    margin-left: .2rem;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* dark and light mode */
+.light{
+   display: none;
+}
+.light_dark_mode i{
+    padding: 0 .2rem ;
+    font-size: 1.3rem;
+    color: #fff;    
+}  
+
+
+/* nav barr */
+.box .a{
+    display: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+.box .b{
+    color: #fff;
+    font-size: 1.2rem;
+} 
+
+/* menu bar */
+.menu_bar{
+    font-size: 1.1rem;
+    color: #fff;
+    padding-left: 1.8rem;
+}
+
+
+
+
+
+/* Project_section */
+.project:hover{
+    .project_img, .project_img_text{
+       
+        display: none;
+    }
+    .text{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(255, 166, 0, 0.8);
+        font-size: 2rem;
+    }
+    i{
+        color: initial;
+    }
+}
+.project_img{
+    width: 100%;
+    height: 90%;
+}
+.text{
+    height: 100%;
+    display: none;
+}
+.project{
+    box-shadow: 0 0 10px orange;
+    position: relative;
+}
+.project_img_text{
+    position: absolute;
+    background-color: #555;
+    width: 100%;
+    bottom: 0%;
+    padding: .2rem 1rem;
+    text-align:center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1025px) {
+    /* gear */
+    .color_changer
+    {
+        font-size: 1.6rem;
+        position: fixed;
+        top: 30%;
+        left: -1%;
+        color: black;
+        background-color: #fff;
+        padding: 1rem;
+        padding-left: 1.3rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem; 
+        cursor: pointer;  
+        z-index: 10;
+    }
+
+    .main_container_bio_nav{
+        width: 8rem;
+        display: flex;
+        align-items:end;
+        flex-direction:  column;
+        position: fixed;
+        top: 28%;
+        right: 3%;
+        gap: 2rem;
+    }
+    .main_container_bio_nav .box:hover{
+        width: 8rem;
+        border-radius: 30px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: .8s ;
+    
+        justify-content:space-evenly;
+        .box,a{
+            display: inline;
+            transition-delay: 1s ;
+        }
+    }
+    .light_dark_mode{
+        position: fixed;
+        top: 4%;
+        right: 3%;
+        cursor: pointer;
+        padding: .5rem;
+        border-radius:  1rem  3rem;
+        background-color: inherit;
+        background-color: orange;
+    }
+    .mode_text{
+        font-size: 1rem;
+        color: #fff;
+    } 
+    .main_container{
+        height:100vh;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+   
+   
+    .box{
+        width: 3rem;
+        height: 3rem;
+        background-color:orange;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .inner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: .8rem;
+    }
+    .resume_inner{
+        font-size: 6rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 2rem 0;
+        opacity: .12;
+        letter-spacing: .3rem;
+    }
+    .upper{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 4rem;
+        letter-spacing: .2rem;
+    }
+    .upper p{
+        font-size: 3.2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .upper_me{
+        color: orange;
+    }
+
+    
+
+
+   
+    
+    /* Project_section */
+    .input-field {
+        width: 80%;
+        padding: .5rem .8rem;
+        font-size: 1.1;
+        margin: 2rem auto;
+        border: none;
+        border-bottom: 3px solid #000;
+        color: #000;
+        font-size: 1rem;
+    }
+
+    .Project_Section{
+        padding-bottom: 5rem;
+    }
+    .Project_tag{
+        text-align: center;
+        text-transform:capitalize;
+        font-size: 1.5rem;
+        padding-bottom: 3rem ;
+    }
+    .Project_main_Section{
+        width: 60rem;
+        margin:  auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: .5rem;
+    }
+    .project{
+        width: 19rem;
+        height: 12rem;
+        background-color: rgba(255, 0, 0, 0.6);
+        margin: .8rem auto;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    /* gear */
+    .color_changer
+    {
+        font-size: 1.6rem;
+        position: fixed;
+        top: 30%;
+        left: -1%;
+        color: black;
+        background-color: #fff;
+        padding: 1rem;
+        padding-left: 1.1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem; 
+        cursor: pointer;  
+        z-index: 10;
+    }
+
+    .side
+    {
+        background-color: #000000df;
+        width:100%;
+        position: fixed;
+        top: 0%;
+        padding: 2.2rem 0;
+    }
+    .main_container_bio_nav{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction:  row;
+        position: fixed;
+        top: .8rem;
+        gap: 2rem;
+        right: calc(100% - 65%);
+    }
+    .light_dark_mode{
+        position: fixed;
+        top: 1.2rem;
+        right: 3%;
+        cursor: pointer;
+        padding: .5rem;
+        border-radius:  1rem  3rem;
+        background-color: inherit;
+        background-color: orange;
+    }
+    
+    
+    
+    .box{
+        width: 3rem;
+        height: 3rem;
+        background-color:orange;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 3rem;
+    }
+    .resume_inner{
+        font-size: 5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        letter-spacing: .5rem;
+        opacity: .12;
+    }
+    .upper{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 5.5rem;
+    }
+    .upper p{
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+   
+
+
+   
+
+    
+
+
+    
+    /* Project_section */
+    .Project_Section{
+        padding-bottom: 5rem;
+    }
+    .Project_tag{
+        text-align: center;
+        text-transform:capitalize;
+        font-size: 1.5rem;
+        padding-bottom: 3rem ;
+    }
+    .Project_main_Section{
+        width: 45rem;
+        margin:  12rem auto 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: .5rem;
+    }
+    .project{
+        width: 19rem;
+        height: 12rem;
+        margin: .8rem auto;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    /* gear */
+    .color_changer
+    {
+        font-size: 1.6rem;
+        position: fixed;
+        top: 30%;
+        left: -1%;
+        color: black;
+        background-color: #fff;
+        padding: .5rem .5rem;
+        padding-left: .2rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem; 
+        cursor: pointer;  
+        z-index: 10;
+    }
+
+    .side{
+        background-color: #000000df;
+        width:100%;
+        position: fixed;
+        top: 0%;
+        padding: 1.7rem 0;
+    }
+    .main_container_bio_nav{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction:  row;
+        position: fixed;
+        top: .8rem;
+        gap: 1rem;
+        right: calc(100% - 65%);
+    }
+    .main_container{
+        height: auto;
+        width: 100%;
+        display: inline-block;
+        flex-direction:row-reverse;
+        position: relative;
+        background-color: transparent;
+
+    }
+    
+    .light_dark_mode{
+        width: 2rem;
+        height: 2rem;
+        background-color:orange;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: .8rem;
+    }
+    .mode_text{
+        display: none;
+    } 
+    .box{
+        width: 2rem;
+        height: 2rem;
+        background-color:orange;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume_inner{
+        font-size: 3.8rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        opacity: .12;
+    }
+    .upper{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 5.1rem;
+    }
+    .upper p{
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    
+   
+
+    /* Project_section */
+    .Project_main_Section{
+        width: auto;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+@media screen and (max-width:700px) {
+    /* ABOUT _SECTION */
+    .personal_info_details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 2rem;
+    }
+    .info_name,.info_details{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width:500px) {
+
+
+    /* Education_section */
+    .education_section_heading{
+        margin: 5rem auto 3rem;
+
+    }
+    .education_section_box{
+        margin: 4rem  2.5rem 0;
+    }
+    .degree_and_college{
+        display: inline-block;
+    }
+    .degree_name{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }    
+    
+}

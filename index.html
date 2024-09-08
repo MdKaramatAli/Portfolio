@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" >
+
+    <!-- loader -->
+    <div class="loader_box">
+        <div class="loader A"></div>
+        <div class="loader B"></div>
+        <div class="loader C"></div>
+        <div class="loader D"></div>
+    </div>
+    
+
+    <div class="main" >
+        
+        <!-- Navigate & color changer & day and night mode  -->
+        <!-- START's HERE -->
+        <div class="gear_nav_day">
+            <div class="color_changer">
+                <i class="fa-solid fa-gear">  </i> 
+            </div>
+            <div class="color_selector" >
+                <p>Color Switcher <i class="fa-solid fa-xmark" id="cross"></i></p>
+                <div class="colors" >
+                    <i class="fa-solid fa-droplet" style="color: red;" id="red"></i>
+                    <i class="fa-solid fa-droplet" style="color: royalblue;" id="royalblue"></i>
+                    <i class="fa-solid fa-droplet" style="color: #4d994d;" id="#4d994d"></i>
+                    <i class="fa-solid fa-droplet" style="color: #1abeff" id="#1abeff"></i>
+                    <i class="fa-solid fa-droplet" style="color: orange;" id="orange"></i>
+                    <i class="fa-solid fa-droplet" style="color: green;" id="green"></i>
+                    <i class="fa-solid fa-droplet" style="color: #ff5900;" id="#ff5900"></i>
+                    <i class="fa-solid fa-droplet" style="color: #ff2ff8;" id="#ff2ff8"></i>
+                </div>
+            </div>
+            
+            <div class="side">
+                <div class="light_dark_mode" id="color_changer_effect">
+                    <div class="dark">
+                        <span class="mode_text">Dark</span>
+                        <i class="fa-solid fa-toggle-on"></i>
+                    </div>
+                    <div class="light">
+                        <span class="mode_text" >Light</span>
+                        <i class="fa-solid fa-toggle-off"></i>
+                    </div>
+                </div>
+
+                <div class="main_container_bio_nav" >
+
+                    <div class="box same active" id="color_changer_effect" onclick="openCity(event,'home_Tab')"> 
+                      <div class="a"> Home</div>
+                      <div class="b"><i class="fa-solid fa-house" ></i> </div>
+                    </div>
+
+                    <div class="box same" id="color_changer_effect" onclick="openCity(event,'about_Tab')"> 
+                        <div class="a">About_Me</div>
+                        <div class="b"><i class="fa-solid fa-user"></i></div>
+                    </div>
+
+                    <div class="box same" id="color_changer_effect" onclick="openCity(event,'education_Tab')" >
+                        <div class="a" >Education</div>
+                        <div class="b"><i class="fa-solid fa-graduation-cap"></i></div>
+                    </div>
+
+                    <div class="box same" id="color_changer_effect" onclick="openCity(event,'project_Tab')">
+                        <div class="a" >Project</div>
+                        <div class="b"><i class="fa-solid fa-suitcase"></i></div>
+                    </div>
+
+                    <div class="box same" id="color_changer_effect" onclick="openCity(event,'conatct_Tab')">
+                        <div class="a" >Contact</div>
+                        <div class="b"><i class="fa-regular fa-id-badge"></i></div>
+                    </div>
+
+                </div>
+            </div>
+       </div>
+        <!-- End's HERE-->
+
+
+        <!-- Home page START HERE -->
+        <div class="home_page Tab" id="home_Tab">
+            <div class="home_container">
+
+                <div class="home_container_photo_border" id="color_changer_effect"> 
+                </div>
+    
+                <div class="home_container_photo">
+                    <img src=""  class="images">
+                </div>
+    
+                <div class="home_container_bio">
+                    <div class="home_container_bio-text">
+                        <p class="p1">Hi <img src="images/hello.jpg" class="hello">,</p> 
+                        <span class="name">i'm <span class="name1" id="color_changer_effect_text"> Md Karamat Ali</span>,</span>
+                        <p class="p2"> Front-end Developer
+                        </p> 
+                        <br>
+                        <div class="links">
+                          <a href="https://www.linkedin.com/in/connectkaramat/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                           
+                            <a href="mailto:mdkaramat111@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                            
+                            <a href="https://github.com/MdKaramatAli" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+        <!-- Home page end's here -->
+
+        <!-- About page START HERE -->
+
+        <div class="About_container Tab"  id="about_Tab">
+                
+            <div class="inner">
+                <div class="resume_inner">Resume</div>
+            </div>
+            <div class="upper">
+                <div class="resume_upper">
+                    <p>About <span id="color_changer_effect_text" class="upper_me">Me</span></p>
+                </div>
+            </div>
+
+           <div class="right_side">
+                <div class="photo"> 
+                    <img src="images/dark.jpg" alt="">
+                </div>
+
+                <div class="about">
+                    <p class="p12">About Me </p>
+                   
+                    <p class="p22"> Hello! Interestingly, I have been a student of Maths in my high school and got introduced to programming in my first year at <span id="color_changer_effect_text" class="upper_me"> Asansol Engineering College.</span>  My interest in coding started back in 2022 during second year of B.tech. Since then, I started learning programming languages & solving problems based on data structure and algorithms. Most importantly <span id="color_changer_effect_text" class="upper_me"> I'm a Problem Solver.</span> 
+                        <br>
+                        <br>
+                    Today, I'm currently pursuing my Bachelors in Information technology <span id="color_changer_effect_text" class="upper_me"> (2021-2025)</span> with <span id="color_changer_effect_text" class="upper_me"> 7.8 GPA aggregate.</span> 
+                        
+                    Also I've knowledge of Web Development and created some projects on that using HTML, CSS, Javascript and some other cool libraries and frameworks.
+                    </p>
+
+                     <!-- cv -->
+                    <button class="cv">
+                        <a href="https://drive.google.com/file/d/1MH2VeurJg27XdbKVqut6qJffknn7paJu/view?usp=sharing" target="_blank"> Resume </a>
+                    </button>
+                </div>
+           </div>
+        </div>  
+        <!-- About page end's HERE -->
+
+
+        <!-- Education PAGE Start here  -->
+        <div class="Education_page Tab"  id="education_Tab">
+            <div class="education_section">
+
+                <div class="education_section_heading">
+                    Education
+                </div>
+
+                <div class="education_section_box   Left_to_right " >
+                    <div class="box icon" id="color_changer_effect">
+                        <i class="fa-solid fa-graduation-cap" ></i>
+                    </div>
+                
+                    <div class="education_year">2021-2025</div>
+                    <div class="degree_and_college">
+                        <div class="degree_name">Bachelor Degree <span class="gap">-</span></div>
+                        <div class="college_name" id="color_changer_effect_text">Asansol Engineering College</div>
+                    </div>
+                    <div class="education_details">
+                        Bachelor in Information Technology
+                    </div>
+                </div>
+
+                <div class="education_section_box right_to_left">
+                    <div class="box icon" id="color_changer_effect">
+                        <i class="fa-solid fa-graduation-cap" ></i>
+                    </div>
+                
+                    <div class="education_year">2020</div>
+                    <div class="degree_and_college">
+                        <div class="degree_name">Higher secondary <span class="gap">-</span></div>
+                        <div class="college_name" id="color_changer_effect_text">Asansol North Point School</div>
+                    </div>
+                </div>
+
+                <div class="education_section_box Left_to_right">
+                    <div class="box icon" id="color_changer_effect">
+                        <i class="fa-solid fa-graduation-cap" ></i>
+                    </div>
+                
+                    <div class="education_year">2018</div>
+                    <div class="degree_and_college">
+                        <div class="degree_name">Secondary education <span class="gap">-</span></div>
+                        <div class="college_name" id="color_changer_effect_text">St.Thomas High School</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="break_line" id="color_changer_effect"></div>
+
+            <!-- // skills Section -->
+            <div class="skills">
+
+                <div class="skills_head" > My Skills</div>
+
+                <div class="skills_section">
+
+                    <div class="skills_section_box" id="color_changer_effect_border">
+                        <div class="skills_section_box_img">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="skills_section_box_text">
+                            HTML
+                        </div>
+                    </div>
+
+                    <div class="skills_section_box" id="color_changer_effect_border">
+                        <div class="skills_section_box_img">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="skills_section_box_text">
+                            CSS
+                        </div>
+                    </div>
+
+                    <div class="skills_section_box" id="color_changer_effect_border">
+                        <div class="skills_section_box_img">
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="skills_section_box_text">
+                            Javascript
+                        </div>
+                    </div>
+
+                    <div class="skills_section_box" id="color_changer_effect_border">
+                        <div class="skills_section_box_img">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="skills_section_box_text">
+                            react
+                        </div>
+                    </div>
+
+                    <div class="skills_section_box" id="color_changer_effect_border">
+                        <div class="skills_section_box_img">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="skills_section_box_text">
+                            MYsql
+                        </div>
+                    </div>
+                    
+                    <div class="skills_section_box" id="color_changer_effect_border">
+                        <div class="skills_section_box_img">
+                            <i class="fa-brands fa-linux"></i>
+                        </div>
+                        <div class="skills_section_box_text">
+                            linux
+                        </div>
+                    </div>
+
+                    <div class="skills_section_box" id="color_changer_effect_border">
+                        <div class="skills_section_box_img">
+
+                        </div>
+                        <div class="skills_section_box_text">
+                            c++
+                        </div>
+                    </div>
+
+                    <div class="skills_section_box" id="color_changer_effect_border">
+                        <div class="skills_section_box_img">
+
+                        </div>
+                        <div class="skills_section_box_text">
+                            Java
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- Education PAGE end here  -->
+
+        <!-- Project Page Start here   -->
+        <div class="project_page Tab"  id="project_Tab">
+            <div class="About_container">
+                <div class="inner">
+                    <div class="resume_inner">Work</div>
+                </div>
+                <div class="upper">
+                    <div class="resume_upper">
+                        <p> Project</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Project_Section">
+
+                <div class="Project_main_Section">
+
+                    <div class="project" id="color_changer_effect_box_shadow">
+
+                        <div class="project_img"><img src="images/Weather App.png" alt=""></div>
+                        
+                        <div class="project_img_text">Weather App</div>
+
+                        <div class="text">
+                            <a href="https://weather-app-lac-sigma.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/MdKaramatAli/weather-App/tree/main"  target="_blank">
+                                <i class="fa-regular fa-file-code"></i>
+                            </a>        
+                        </div>
+                    </div>
+
+                    <div class="project" id="color_changer_effect_box_shadow">
+
+                        <div class="project_img"><img src="images/tic-tak.png" alt=""></div>
+                        
+                        <div class="project_img_text">Tic Tak Toe</div>
+
+                        <div class="text">
+                            <a href="https://tic-tac-toe-beta-rouge.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/MdKaramatAli/Tic_Tac_Toe"  target="_blank">
+                                <i class="fa-regular fa-file-code"></i>
+                            </a>        
+                        </div>
+                    </div>
+
+                    <div class="project" id="color_changer_effect_box_shadow">
+
+                        <div class="project_img"><img src="images/cal.png" alt=""></div>
+                        <div class="project_img_text">Basic Calculator</div>
+
+                        <div class="text">
+                            <a href="https://basic-calculator-livid.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/MdKaramatAli/Basic-Calculator.git"  target="_blank">
+                                <i class="fa-regular fa-file-code"></i>
+                            </a>        
+                        </div>
+                    </div>
+
+                    <div class="project" id="color_changer_effect_box_shadow">
+
+                        <div class="project_img"><img src="images/insta_story.png" alt=""></div>
+                        <div class="project_img_text">Instagram Story</div>
+
+                        <div class="text">
+                            <a href="https://insta-story-orpin.vercel.app//" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/MdKaramatAli/Insta_story.git"  target="_blank">
+                                <i class="fa-regular fa-file-code"></i>
+                            </a>        
+                        </div>
+                    </div>
+                
+                    <div class="project" id="color_changer_effect_box_shadow">
+
+                        <div class="project_img"><img src="images/bubble.png" alt=""></div>
+                        <div class="project_img_text">Bubble game</div>
+
+                        <div class="text">
+                            <a href="https://bubble-game-brown.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/MdKaramatAli/Bubble_game.git" target="_blank">
+                                <i class="fa-regular fa-file-code"></i>
+                            </a>        
+                        </div>
+                    </div>
+                    
+                    <div class="project" id="color_changer_effect_box_shadow">
+
+                        <div class="project_img"><img src="images/netflix.png" alt=""></div>
+                        <div class="project_img_text">Netflix UI clone</div>
+                        <div class="text">
+                        
+                            <a href="https://netflix-clone-liart-delta.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/MdKaramatAli/Netflix_clone.git"  target="_blank">
+                                <i class="fa-regular fa-file-code"></i>
+                            </a>        
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- Project Page end here   -->
+
+        <!--  Contact Page Start here   -->
+       <div class="conatct_page Tab"  id="conatct_Tab">
+            <div class="About_container">
+                <div class="upper">
+                    <p> Contact </p>
+                </div>
+            </div>
+            
+            <div class="contact_section"> </div>
+       </div>
+       <!--  Contact Page end here   -->
+
+
+
+    </div>
+
+    
+</body>
+</html>
+<script src="script.js">
+</script>
