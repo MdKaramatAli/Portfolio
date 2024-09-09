@@ -770,14 +770,14 @@ img{
         padding: 1rem 0;
         letter-spacing: .5rem;
         opacity: .12;
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
     .upper{
         width: 100%;
         display: flex;
         justify-content: center;
         position: absolute;
-        top: 4.5rem;
+        top: 7rem;
     }
     .upper p{
         font-size: 3rem;
