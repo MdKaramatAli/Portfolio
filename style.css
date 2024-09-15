@@ -268,20 +268,100 @@ img{
     text-align:center;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #fff;
 }
 /* Project Page end here  */
 
-/* Contact Page Start here  */
 
+/* Contact Page Start here  */
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 11rem 0 3rem;
+    background-color: rgba(0, 200, 255, 0.5);
+    height: auto;
+    border-radius: 1.2rem;
+}
+.contact_section_text{
+    padding: 2rem ;
+    text-align: center;
+}
+.text_heading {
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+#link {
+   margin-left: 5rem;
+}
+.contact_section_form {
+    background-color:#ffffffe6;
+    border-radius: 1rem;
+    color: #000;
+}
+.form_heading {
+    font-size: 1.5rem;
+    text-decoration:underline;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+}
+input {
+    border: none;
+    margin: .3rem 0 .8rem 3rem;
+    padding: .5rem 1rem ;
+    font-size: .9rem;
+    border-bottom: 2px solid #fff;
+    box-shadow: 1px 1px 1px #999;
+} 
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #03a3f9;
+}
+textarea {
+    margin:.3rem 0 .8rem 3rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #999;
+}
+textarea:focus {
+    outline: none;
+}
+.button {
+   text-align: center;
+}
+button{
+    border: none;
+}
+#submit {
+    padding: .5rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 3rem;
+    background-color: rgba(0, 200, 255, 0.5);
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: rgba(0, 200, 255, 1);
+} 
 /* Contact Page end here  */
 
 
 
-
+/* all tab are none accept home page  */
 #about_Tab, #education_Tab, #project_Tab, #conatct_Tab {
     display: none;
 } 
+
+
+ 
 
 @media screen and (min-width: 1025px) {
     /* this is nav, day & night, colors */
@@ -569,8 +649,8 @@ img{
     }
     /* Education PAGE end here */
 
+    
     /* Project Page Start here  */
-        /* Project_section */
     .input-field {
         width: 80%;
         padding: .5rem .8rem;
@@ -607,11 +687,41 @@ img{
         overflow: hidden;
     }
     /* Project Page end here  */ 
-    
+
 
     /* Contact Page Start here  */
-
+   
+    .contact {
+    width: 58rem;
+    }
+    
+    .text_heading {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    .contact_section_form {
+        width: 38rem;
+        height: 30rem;
+        margin:  2rem ;
+    }
+    #form {
+        padding: 0 1.2rem;
+        font-size: 1rem;
+    }
+    #input {
+        width: 17rem;
+    } 
+    textarea {
+        width: 17rem;
+    }
+     
+    #link_2 {
+        display: none;
+    }
     /* Contact Page end here  */
+
+
+
 }
 
 
@@ -679,6 +789,9 @@ img{
     }
     .box .a {
         display: none;
+    }
+    .active {
+        border: .24rem solid #fff !important ;
     }
     /* Ends here */
      
@@ -771,14 +884,14 @@ img{
         padding: 1rem 0;
         letter-spacing: .5rem;
         opacity: .12;
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
     .upper{
         width: 100%;
         display: flex;
         justify-content: center;
         position: absolute;
-        top: 8rem;
+        top: 6.4rem;
     }
     .upper p{
         font-size: 3rem;
@@ -788,14 +901,12 @@ img{
     .upper_me{
         color: orange;
     }
-
     .right_side {
         display: flex;
         justify-content:center;
         align-items: center;
         flex-direction: column;
-        margin-top: 2rem;
-
+        margin-top: 1rem;
     }
     .about{
         width: 75%;
@@ -822,7 +933,7 @@ img{
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
-        margin: 6rem auto 5rem;
+        margin: 6.5rem auto 5rem;
     }
     .education_section_box{
         border-left: .2rem solid rgb(243, 221, 221);
@@ -903,6 +1014,7 @@ img{
     }
     /* Education PAGE end here */
 
+
     /* Project Page Start here  */
     .Project_Section{
         padding-bottom: 5rem;
@@ -915,7 +1027,7 @@ img{
     }
     .Project_main_Section{
         width: 45rem;
-        margin:  5rem auto ;
+        margin: 2rem auto 3rem ;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: .5rem;
@@ -930,7 +1042,36 @@ img{
     /* Project Page end here  */
 
     /* Contact Page Start here  */
-
+    .contact {
+        flex-direction: column;
+        margin: 13rem 0 3rem;
+        width: 45rem;
+    }
+    .text_heading {
+        font-size: 2.5rem;
+        margin:  0;
+    }
+    #link {
+        display: none;
+    }
+    #link_2 {
+        padding: 1.5rem 0;
+    }
+    .contact_section_form {
+        width: 28rem;
+        height: 30rem;
+        margin: 0 2rem ;
+    }
+    #form {
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+    #input {
+        width: 20rem;
+    } 
+    textarea {
+        width: 20rem;
+    }
     /* Contact Page end here  */
 
 
@@ -944,7 +1085,7 @@ img{
         padding: .5rem .45rem .5rem ;
     }
     .side{
-        padding: 1.7rem 0;
+        padding: 1.8rem 0;
     }
     /* day & night  */
     .light_dark_mode{
@@ -1042,7 +1183,7 @@ img{
         font-size: 3.8rem;
     }
     .upper{
-        top: 8rem;
+        top: 6rem;
     }
     .upper p{
         font-size: 2.5rem;
@@ -1084,6 +1225,7 @@ img{
     }    
     /* Education PAGE end here */
 
+
     /* Project Page Start here  */
     .Project_main_Section{
         width: auto;
@@ -1093,6 +1235,29 @@ img{
 
 
     /* Contact Page Start here  */
+    .contact {
+        margin: 13rem 1rem 3rem;
+        width: auto;
+    }
+    .text_heading {
+        font-size: 2rem;  
+    }
+    .contact_section_form {
+        width: 28rem;
+        height: 30rem;
+        margin: 1rem ;
+    }
+    #form {
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+    #input {
+        width: 20rem;
+    } 
+    textarea {
+        width: 20rem;
+    }
+
 
     /* Contact Page end here  */
 }
@@ -1115,4 +1280,53 @@ img{
         font-weight: 700;
     }    
     /* Education Page end  here  */
+
+
+    /* Contact Page start here  */
+    .contact {
+        margin: 11rem .5rem 3rem;
+    }
+    .text_heading {
+        font-size: 1.2rem;
+    }
+    .contact_section_text {
+        padding: 2rem 1rem .5rem;
+    }
+    #link_2 {
+        padding: 1rem 0;
+    }
+    .contact_section_form {
+        width: 21rem;
+        height: 30rem;
+        margin: 1rem ;
+    }
+    #form {
+        padding: 0 .5rem;
+        font-size: 1rem;
+    }
+    #input {
+        width: 16rem;
+    } 
+    textarea {
+        width: 16rem;
+    } 
+
+    /* Contact Page end here  */
 }
+@media screen and (max-width:440px) {
+    /* sara mix and inner hidden   */
+    .inner {
+        opacity: 0;
+    }
+    .Project_main_Section {
+        margin: 0rem auto 3rem ;
+    }
+    .about {
+        width: 85%;
+    }
+    
+
+   
+
+}
+
