@@ -125,9 +125,6 @@ body, html{
     color: #fff;
     font-size: 1.2rem;
 } 
-.active {
-    border: .24rem solid #fff ;
-}
 /* end's here */
 
 /* Main  */
@@ -420,6 +417,9 @@ button{
     .box .a {
         display: none;
     }
+    .active {
+        border: .24rem solid ;
+    }
     .main_container_bio_nav .box:hover{
         width: 8rem;
         border-radius: 30px;
@@ -432,6 +432,7 @@ button{
             transition-delay: 1s ;
         }
     } 
+
     /* Ends here */
      
     
@@ -1324,9 +1325,4 @@ button{
     .about {
         width: 85%;
     }
-    
-
-   
-
 }
-
