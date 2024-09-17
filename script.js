@@ -101,7 +101,6 @@ document.body.style.color = "#fff";// default color
 document.body.style.backgroundColor = "#111";// default color
 
 const active = document.querySelector(".active"); // for active_tab
-active.style.borderColor = "#fff";
 const person_photo = document.querySelector(".images");
 person_photo.src = "images/dark.jpg";
 
@@ -111,7 +110,7 @@ dark.addEventListener("click", function(){
     light.style.display = "block";
     document.body.style.backgroundColor ="#fff";
     document.body.style.color = "#111";
-    active.style.borderColor = "#111";
+    active.style.borderColor = "#000";
 
     person_photo.src = "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 })
